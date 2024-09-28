@@ -113,3 +113,5 @@ function decode(){
     humanField.value = decyphered
 
 }
+
+encode();
