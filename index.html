@@ -7,20 +7,21 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧿</text></svg>">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <title>Transmitty</title>
+    <title>TransmiTTY</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 
 <body>
-    <h1>Transmitty</h1>
-    <p>This small app translates text into Mitty's signals!</p>
+    <h1>TransmiTTY<span class="blink">_</span></h1>
+    <p>This small app translates human text into Mitty's signals and vice versa!</p>
     <div class="flex">
         <div>
-            <label>Human</label>
+            <label>HUMAN</label>
             <textarea id="humanReadable" oninput="encode()">brat</textarea>
         </div>
         <div>
-            <label>Mitty</label>
+            <label class="mittyLabel">█▀█ ░▀░ █ █ █▀░▀█▀█</label>
             <textarea id="mittyCypher" oninput="decode()"></textarea>
         </div>
     </div>
