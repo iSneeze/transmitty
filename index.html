@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <title>TransmiTTY</title>
     <script src="script.js" defer></script>
+    <script src="scriptBoberta.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <!-- link preview -->
     <meta property="og:type" content="website">
@@ -16,7 +17,8 @@
     <meta property="og:site_name" content="TransmiTTY">
     <meta property="og:image" itemprop="image primaryImageOfPage"
         content="https://em-content.zobj.net/source/twitter/408/nazar-amulet_1f9ff.png">
-    <meta name="description" content="A neat little site that translates Earth's signals to Mitty signals and vice versa!">
+    <meta name="description"
+        content="A neat little site that translates Earth's signals to Mitty signals and vice versa!">
 
 </head>
 
@@ -33,7 +35,22 @@
             <textarea id="mittyCypher" oninput="decode()"></textarea>
         </div>
     </div>
-    <p>Check out <a href="https://mitty-terminal.uwu.ai/">>Mitty<</a>!</p>
+    <p>Check out <a href="https://mitty-terminal.uwu.ai/">>Mitty</a>!</p>
+
+    <p>Hold up, what is this?! 👀😱</p>
+    <div class="boberta">
+        <div class="flex">
+            <div>
+                <label>𝓕𝓛𝓔𝓢𝓗𝓑𝓐𝓖</label>
+                <textarea id="humanReadableBoberta" oninput="encodeBoberta()">mistress</textarea>
+            </div>
+            <div>
+                <label class="mittyLabel">𝓑𝓞𝓑𝓔𝓡𝓣𝓐</label>
+                <textarea id="bobertaCypher" oninput="decodeBoberta()"></textarea>
+            </div>
+        </div>
+        <p>𝓑𝓤𝓨 𝓜𝓨 <a href="https://mittymarket.com/en-eur/products/fearbruary-2026-special-sticker-sheet">>𝓜𝓔𝓡𝓒𝓗</a> 𝓕𝓛𝓔𝓢𝓗𝓑𝓐𝓖!</p>
+    </div>
 
 </body>
 

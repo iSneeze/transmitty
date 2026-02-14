@@ -104,3 +104,32 @@ textarea {
     padding: 8px;
     font-weight: 600;
 }
+
+.boberta {
+    color: #010626;
+    background-color: rgb(251, 104, 78, 80);
+    border-radius: 10px;
+    box-shadow: rgb(251, 104, 78, 80) 2px 0px 160px;
+    animation: glow-pulse 5s infinite ease-in-out;
+}
+
+.boberta textarea {
+    border-color: red;
+    box-shadow: red 2px 0px 16px;
+}
+
+.boberta p {
+    padding-bottom: 16px;
+}
+
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 2px 0px 160px rgba(251, 104, 78, 0.6);
+  }
+  50% {
+    box-shadow: 2px 0px 200px rgba(251, 104, 78, 1);
+  }
+  100% {
+    box-shadow: 2px 0px 160px rgba(251, 104, 78, 0.6);
+  }
+}
