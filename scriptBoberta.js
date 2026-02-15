@@ -1,5 +1,5 @@
 
-var decodeRef = {
+var decodeRefBob = {
 '𝓐' : 'A',
 '𝓑' : 'B',
 '𝓒' : 'C',
@@ -28,7 +28,7 @@ var decodeRef = {
 '𝓩' : 'Z',
 };
 
-var encodeRef = {
+var encodeRefBob = {
 'A' : '𝓐',
 'B' : '𝓑',
 'C' : '𝓒',
@@ -66,7 +66,7 @@ function encodeBoberta() {
     let humanField = document.getElementById("humanReadableBoberta");
     let mittyField = document.getElementById("bobertaCypher");
 
-    let cypher = translate(humanField.value.toUpperCase(), encodeRef)
+    let cypher = translate(humanField.value.toUpperCase(), encodeRefBob)
     mittyField.value = cypher;
 }
 
@@ -74,9 +74,10 @@ function decodeBoberta() {
     let humanField = document.getElementById("humanReadableBoberta");
     let mittyField = document.getElementById("bobertaCypher");
 
-    let decyphered = translate(mittyField.value, decodeRef);
+    let decyphered = translate(mittyField.value, decodeRefBob);
     humanField.value = decyphered
 
+    document.getElementById("hidden").removeAttribute("class")
 }
 
 encodeBoberta();

@@ -122,6 +122,14 @@ textarea {
     padding-bottom: 16px;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+#hidden a {
+    color: rgba(65, 94, 255, 0.2);
+}
+
 @keyframes glow-pulse {
   0% {
     box-shadow: 2px 0px 160px rgba(251, 104, 78, 0.6);
